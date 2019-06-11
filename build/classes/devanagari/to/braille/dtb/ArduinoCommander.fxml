@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="devanagari.to.braille.dtb.ArduinoCommanderController">
+   <children>
+      <ChoiceBox fx:id="COM_ports" layoutX="225.0" layoutY="78.0" prefWidth="150.0" />
+      <Label layoutX="200.0" layoutY="39.0" text="Choose Serial Port">
+         <font>
+            <Font name="Calibri" size="27.0" />
+         </font>
+      </Label>
+      <Button fx:id="ConnectButton" layoutX="274.0" layoutY="121.0" mnemonicParsing="false" onAction="#Initiate" text="Connect">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="Console" editable="false" layoutX="7.0" layoutY="168.0" prefHeight="200.0" prefWidth="588.0" />
+   </children>
+</AnchorPane>
